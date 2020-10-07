@@ -1,6 +1,6 @@
 ## O que deverá ser desenvolvido
 
-A aplicação consistirá de uma tabela com informações acerca de todos os planetas existentes no universo fictício da série _Star Wars_. A tabela será alimentada com dados retornados de uma [API](https://swapi.co/documentation) real. Haverá, também, vários filtros que permitirão a quem usa selecionar e encontrar com facilidade a informação desejada.
+A aplicação consistirá de uma tabela com informações acerca de todos os planetas existentes no universo fictício da série _Star Wars_. A tabela será alimentada com dados retornados de uma [API](https://swapi-trybe.herokuapp.com/api/planets/) real. Haverá, também, vários filtros que permitirão a quem usa selecionar e encontrar com facilidade a informação desejada.
 
 ### 1 - Fazer uma requisição para o endpoint `/planets` da API de Star Wars e preencher uma tabela com os dados retornados, com exceção dos da coluna `residents`
 
