@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "npm install cpx && npm run copy-libs",
+    "update-deps": "npm update",
+    "postupdate-deps": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" public/js/lib -C"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,14 @@
   },
   "homepage": "https://github.com/antoniopaolillo/starwars-angularjs#readme",
   "dependencies": {
-    "angular": "^1.5.8",
+    "angular": "1.8.x",
+    "angular-animate": "1.8.x",
+    "angular-resource": "1.8.x",
+    "angular-route": "1.8.x",
+    "cpx": "^1.5.0",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.8.x"
   }
 }
