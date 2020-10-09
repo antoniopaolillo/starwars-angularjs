@@ -1,0 +1,25 @@
+{
+  "name": "starwars-angularjs",
+  "version": "1.0.0",
+  "description": "A aplicação consistirá de uma tabela com informações acerca de todos os planetas existentes no universo fictício da série _Star Wars_. A tabela será alimentada com dados retornados de uma [API](https://swapi-trybe.herokuapp.com/api/planets/) real. Haverá, também, vários filtros que permitirão a quem usa selecionar e encontrar com facilidade a informação desejada.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniopaolillo/starwars-angularjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniopaolillo/starwars-angularjs/issues"
+  },
+  "homepage": "https://github.com/antoniopaolillo/starwars-angularjs#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "express": "^4.17.1"
+  }
+}
