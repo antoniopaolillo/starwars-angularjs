@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br" ng-app="alurapic">
-    <head>
-        <base href="/">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Alurapic</title>
-        <script src="js/lib/angular.min.js"></script>
+<html lang="pt-br" ng-app="angularjsapp">
+	<head>
+		<base href="/">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>StarWars Planets</title>
+		<script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
         <script src="js/main.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div>start project</div>
-        </div>
-    </body>
+        <script src="js/directives/table.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<ng-view></ng-view>
+		</div>     
+	</body>
 </html>
