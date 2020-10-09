@@ -1,0 +1,14 @@
+<div>
+  <div>
+    <label>Name Filter</label>
+    <input ng-model="nameFilter" ng-model-options="{ debounce: 500 }" />
+  </div>
+  <div>
+    <label></label>
+    <select ng-options="header as header for header in filteredHeaders" ng-model="filter.group">
+      <option value="">Selecione Grupo</option>
+    </select>
+    <select></select>
+    <input></input>
+  </div>
+</div>

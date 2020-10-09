@@ -1,22 +1,20 @@
 angular.module('table', [])
   .directive('myTable', function () {
 
-    var ddo = {};
+    const ddo = {};
 
     ddo.restrict = "E";
 
-    ddo.scope = {
-      titulo: '@'
-    };
+    ddo.templateUrl =  'partials/table.html';
 
-    ddo.template =
-      '<div class="panel panel-default">'
-      + '   <div class="panel-heading">'
-      + '        <h3 class="panel-title text-center">{{titulo}}</h3> '
-      + '   </div>'
-      + '   <div class="panel-body">'
-      + '   </div>'
-      + '</div>'
+    return ddo;
+  }).directive('filtersInput', function() {
+
+    const ddo = {};
+
+    ddo.restrict = "E";
+
+    ddo.templateUrl =  'partials/filtersinput.html';
 
     return ddo;
   });
