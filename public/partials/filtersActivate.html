@@ -2,7 +2,7 @@
   <li ng-repeat="filter in valuesFilterArr">
     <div class="filters-activates-box">
       <p>{{filter.position}} | {{filter.valueRange}} | {{filter.value}}</p>
-      <button>X</button>
+      <button ng-click="removeFilter(filter)">X</button>
     </div>
   </li>
 </ol>

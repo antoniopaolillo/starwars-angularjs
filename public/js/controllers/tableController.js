@@ -30,4 +30,9 @@ angular.module('angularjsapp').controller('TableController', function ($scope, $
   $scope.shouldAdd = function () {
     return !($scope.valuesFilter.position && $scope.valuesFilter.valueRange && $scope.valuesFilter.value)
   }
+
+  $scope.removeFilter = function (filterToBeRemoved) {
+    const newFilteredArr = $scope.valuesFilterArr.filter((filter) => filter.position !== filterToBeRemoved.position);
+    $scope.valuesFilterArr = newFilteredArr;
+  }
 });
