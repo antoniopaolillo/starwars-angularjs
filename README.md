@@ -31,7 +31,3 @@ Por exemplo: O primeiro filtro tem as seguintes seleções: `population | maior 
 ### 5 - Cada filtro de valores numéricos deve ter um ícone de `X` que, ao ser clicado, o apaga e desfaz suas filtragens dos dados da tabela
 
 A coluna que este filtro selecionava deve passar a ficar disponível nos dropdowns dos demais filtros já presentes na tela.
-
-### 6 - As colunas da tabela devem ser ordenáveis de forma ascendente ou descendente
-
-A informação acerca da ordenação das colunas deve ser armazenada  nos campos `filters: { column: 'Name', order: 'ASC'}`, o campo column representa o nome da coluna a ordenar e a ordem representa a ordenação, sendo 'ASC' ascendente e 'DESC' descendente. Por padrão, a tabela começa ordenada pela coluna 'Name' em ordem ascendente.
