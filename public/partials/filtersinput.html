@@ -4,11 +4,16 @@
     <input ng-model="nameFilter" ng-model-options="{ debounce: 500 }" />
   </div>
   <div>
-    <label></label>
-    <select ng-options="header as header for header in filteredHeaders" ng-model="filter.group">
+    <select ng-options="position as position for position in filterPositions()" ng-model="valuesFilter.position">
       <option value="">Selecione Grupo</option>
     </select>
-    <select></select>
-    <input></input>
+    <select ng-model="valuesFilter.valueRange">
+      <option value=''>Selecione</option>
+      <option value="Maior que">Maior que</option>
+      <option value="Menor que">Menor que</option>
+      <option value="Igual a">Igual a</option>
+    </select>
+    <input ng-model="valuesFilter.value" placeholder="Digite o valor" />
+    <button ng-disabled="shouldAdd()" ng-click="addValueFilter()">Adicionar filtro</button>
   </div>
 </div>

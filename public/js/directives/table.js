@@ -17,4 +17,12 @@ angular.module('table', [])
     ddo.templateUrl =  'partials/filtersinput.html';
 
     return ddo;
+  }).directive('filtersActivate', function() {
+    const ddo = {};
+
+    ddo.restrict = "E";
+
+    ddo.templateUrl =  'partials/filtersActivate.html';
+
+    return ddo;
   });

@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br" ng-app="angularjsapp">
-	<head>
-		<base href="/">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>StarWars Planets</title>
-		<script src="js/lib/angular/angular.min.js"></script>
-        <script src="js/lib/angular-route/angular-route.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/directives/table.js"></script>
-        <script src="js/controllers/tableController.js"></script>
-        <script src="js/services/filterService.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<ng-view></ng-view>
-		</div>     
-	</body>
+
+<head>
+	<base href="/">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>StarWars Planets</title>
+	<link rel="stylesheet" href="css/filterActivate.css">
+	<script src="js/lib/angular/angular.min.js"></script>
+	<script src="js/lib/angular-route/angular-route.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/directives/table.js"></script>
+	<script src="js/controllers/tableController.js"></script>
+	<script src="js/services/filterService.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<ng-view></ng-view>
+	</div>
+</body>
+
 </html>

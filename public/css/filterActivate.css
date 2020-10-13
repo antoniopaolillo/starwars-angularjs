@@ -1,0 +1,4 @@
+.filters-activates-box {
+  display: flex;
+  flex-direction: row;
+}
