@@ -4,12 +4,13 @@
   "description": "A aplicação consistirá de uma tabela com informações acerca de todos os planetas existentes no universo fictício da série _Star Wars_. A tabela será alimentada com dados retornados de uma [API](https://swapi-trybe.herokuapp.com/api/planets/) real. Haverá, também, vários filtros que permitirão a quem usa selecionar e encontrar com facilidade a informação desejada.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "protractor protractor.conf.js",
     "start": "node server.js",
+    "update-webdriver": "webdriver-manager update",
     "postinstall": "npm install cpx && npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" public/js/lib -C"
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" public/lib -C"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,11 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "angular-mocks": "1.8.x"
+    "angular-mocks": "1.8.x",
+    "jasmine-core": "^3.6.0",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-spec-reporter": "0.0.32"
   }
 }
