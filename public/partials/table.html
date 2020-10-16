@@ -1,0 +1,15 @@
+<div>
+  <span ng-show="(data.length === 0)">Loading...</span>
+  <table>
+    <thead>
+      <tr>
+        <th ng-repeat="header in filteredHeaders">{{header}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="planet in filterPlanets()">
+        <td ng-repeat="position in filteredHeaders">{{planet[position]}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

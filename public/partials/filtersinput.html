@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <label>Name Filter</label>
+    <input ng-model="nameFilter" ng-model-options="{ debounce: 500 }" />
+  </div>
+  <div>
+    <select ng-options="position as position for position in filterPositions()" ng-model="valuesFilter.position">
+      <option value="">Selecione Grupo</option>
+    </select>
+    <select ng-model="valuesFilter.valueRange">
+      <option value=''>Selecione</option>
+      <option value="Maior que">Maior que</option>
+      <option value="Menor que">Menor que</option>
+      <option value="Igual a">Igual a</option>
+    </select>
+    <input ng-model="valuesFilter.value" placeholder="Digite o valor" />
+    <button ng-disabled="shouldAdd()" ng-click="addValueFilter()">Adicionar filtro</button>
+  </div>
+</div>
